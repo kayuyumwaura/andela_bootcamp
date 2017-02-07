@@ -19,7 +19,12 @@ class TestPrime(unittest.TestCase):
 
 # Test if function returns there are o prime numbers if number less than 0 entered.
 	def test_less_than_zero(self):
+		self.assertEqual(prime.prime(0))
+
+# Test if function returns there are o prime numbers if 1 is entered.
+	def test_one(self):
 		self.assertEqual(prime.prime(1))	
+
 
 	# Test if function returns an error message if wrong data type passed to function.
 	def test_invalid_type(self):
